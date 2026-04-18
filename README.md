@@ -2,6 +2,8 @@
 
 A SillyTavern extension that lets AI models activate World Info / lorebook entries on demand via function calling, instead of relying on keyword matching or static context injection.
 
+**Warning!!** Every tool call leads to an additional message that is sent to your LLM. If you use an external provider for your chat, this might lead to extra costs. It is recommended to use this extension with local or low-cost LLMs only.
+
 ## Why this exists
 
 Standard WI activation has three modes: always-on, keyword-triggered, and vectorized (embedding similarity). Each fires automatically based on its own criteria.
@@ -100,6 +102,7 @@ If the user's message triggers a sword fight, the model may call `activateWI(["c
 
 - **Multi-turn persistence** — by default a force-activated entry lasts only for the turn it was triggered. If you want the entry to stay active across subsequent turns, enable the **Sticky** option on it.
 - **Deactivating sticky entries** — use an Inclusion Group to allow one entry to displace another. When the model activates a new entry in the same group, the previously sticky one is pushed out.
+- **Nudge the LLM to use the tool** — Some LLMs might be more willing than others to use the **activateWI** tool. Especially when you use many tools, it might be less inclined to call it. You can remind your model in the character descriptions or author's note to use the tool, how often, when, etc.
 
 ## Limitations
 

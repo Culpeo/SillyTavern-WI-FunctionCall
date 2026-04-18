@@ -1,0 +1,74 @@
+.wi-fc-block {
+    padding: 6px 0 8px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--SmartThemeBorderColor);
+    width: 100%;
+}
+
+.wi-fc-toggle-row {
+    gap: 8px;
+}
+
+.wi-fc-label {
+    cursor: pointer;
+}
+
+.wi-fc-warning {
+    color: var(--ac-orange, orange);
+    font-size: 0.95em;
+}
+
+.wi-fc-details {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 6px;
+    padding-left: 2px;
+    align-items: center;
+    width: 100%;
+}
+
+.wi-fc-desc-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
+}
+
+.wi-fc-tool-desc {
+    resize: both;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wi-fc-detail-label {
+    min-width: 90px;
+    font-size: 0.9em;
+    color: var(--SmartThemeBodyColor);
+    flex-shrink: 0;
+}
+
+/* Settings panel */
+.wi-fc-setting-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.wi-fc-setting-col {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wi-fc-number-input {
+    width: 60px;
+}
+
+#wi_fc_function_description {
+    width: 100%;
+    resize: vertical;
+}
